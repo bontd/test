@@ -1,3 +1,20 @@
+.banner {
+    height: 100vh;
+    background-position: center;
+    &-item {
+        position: absolute;
+        width: 50%;
+    }
+    &-left {
+        left: 0;
+        top: 130px;
+    }
+    &-right {
+        right: 0;
+        top: 30rem;
+    }
+}
+
 .slider {
     overflow: hidden;
     .slick-track {
@@ -19,32 +36,32 @@
 .slider{
     text-align: center;
     color:white;
-    
+    height: calc(852/1920*100vw);
     .slide {
         position: relative;
         padding:0;
+        &-animate {
+            position: relative;
+            width: 0;
+            display: flex;
+            justify-content: center;
+            margin: 0 auto;
+            overflow: hidden;
+            transition: all 1s ease-in-out;
+        }
         img{
-            background: red;
-            width:100%;
+            max-width: unset;
+            width: calc(1536/1920*100vw);
             height: calc(453/1920*100vw);
             opacity: 0.5!important;
-            transition: all .5s ease-in-out;
+            transition: all .8s ease-in-out;
         }
         &.slick-center {
-            
             img{
                 opacity: 1!important;
                 height: calc(852/1920*100vw);
             }
-            .slide-fade {
-                opacity: 1;
-                &.right {
-                    transform: translateX(0);
-                }
-                &.left {
-                    transform: translateX(0);
-                }
-            }
+            
         }
         &-content {
             position: absolute;
@@ -56,17 +73,34 @@
             z-index: 99;
         }
         &-fade {
-            transition: .3s ease-in-out 1s;
+            
             opacity: 0;
             &.right {
-                transform: translateX(-10rem);
+                transform: translateX(-50%);
+                transition: .5s ease-in-out 1s;
             }
             &.left {
-                transform: translateX(10rem);
+                transform: translateX(50%);
+                transition: .5s ease-in-out 1.5s;
             }
         }
-        &.slick-current {
-            
+        
+    }
+}
+
+.fade-active {
+    .slide-animate {
+        width: 100%;
+    }
+    .slick-center {
+        .slide-fade {
+            opacity: 1;
+            &.right {
+                transform: translateX(0);
+            }
+            &.left {
+                transform: translateX(0);
+            }
         }
     }
 }

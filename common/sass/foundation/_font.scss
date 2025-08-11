@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'iCiel Millanova';
+    src: url('../font/millanova/Millanova.ttf');
+}
+
+@font-face {
+    font-family: 'iCiel Begum';
+    src: url('../font/begum/BerlingskeSerif-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'FZ Photographer';
+    src: url('../font/fz-photograph.ttf');
+}
+
+.font-millanova {
+    font-family: 'iCiel Millanova', serif;
+}
+
+.font-begum {
+    font-family: 'iCiel Begum', serif;
+}
+
+.font-photographer {
+    font-family: 'FZ Photographer', serif;
+}
+
 $fontSize-min: 0;
 $fontSize-max: 9;
 // font-size
