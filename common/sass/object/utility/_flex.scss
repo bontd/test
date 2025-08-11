@@ -1,0 +1,141 @@
+// flex
+// ============================================
+
+.d-flex {
+    display: flex;
+}
+
+// flex-wrap
+// ============================================
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+// flex-direction
+// ============================================
+
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+@include lg {
+    .flex-lg-row {
+        flex-direction: row;
+    }
+    
+    .flex-lg-column {
+        flex-direction: column;
+    }
+    
+    .flex-lg-nowrap {
+        flex-wrap: nowrap;
+    }
+}
+
+// justify-content
+// ============================================
+
+.justify-content-start {
+    justify-content: flex-start;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-around {
+    justify-content: space-around;
+}
+
+@include md {
+    .justify-content-md-start {
+        justify-content: start;
+    }
+
+    .justify-content-md-between {
+        justify-content: space-between;
+    }
+    
+    .justify-content-md-center {
+        justify-content: center;
+    }
+
+    .justify-content-md-end {
+        justify-content: end;
+    }
+    
+    .justify-content-lg-around {
+        justify-content: space-around;
+    }
+}
+
+@include lg {
+    .justify-content-lg-start {
+        justify-content: start;
+    }
+
+    .justify-content-lg-between {
+        justify-content: space-between;
+    }
+    
+    .justify-content-lg-center {
+        justify-content: center;
+    }
+
+    .justify-content-lg-end {
+        justify-content: end;
+    }
+    
+    .justify-content-lg-around {
+        justify-content: space-around;
+    }
+}
+
+// align-items
+// ============================================
+.align-items-start {
+    align-items: start;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.align-items-stretch {
+    align-items: stretch;
+}
+
+@include lg {
+    .align-items-lg-start {
+        align-items: start;
+    }
+
+    .align-items-lg-center {
+        align-items: center;
+    }
+    
+    .align-items-lg-end {
+        align-items: flex-end;
+    }
+    
+    .align-items-lg-stretch {
+        align-items: stretch;
+    }
+}

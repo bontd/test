@@ -1,0 +1,103 @@
+// form
+label.error {
+    color: var(--color-danger);
+}
+
+//form-search
+.form-search {
+    @include lgm {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.input-search {  
+    width: 0;    
+    outline: none;      
+    border: none;    
+    background-color: transparent;
+    transition: 0.4s ease-in;
+    @include lg {
+        border: solid 0.1rem #2C2C2C;
+        width: 100%;
+    }
+    &.active {
+        width: 100%;
+        border: none;
+        background-color: var(--color-light);
+    }
+}
+
+
+//button-form-search
+.btn-search {
+    display: flex;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: inherit;
+    right: 1.2rem;    
+    @include lg {
+        left: 1.2rem;
+        right: inherit;
+    }   
+    &:focus , &:active {
+        background-color: transparent;
+    }
+}
+
+// form-group
+.form-group {
+    position: relative;
+    &.invalid, &:hover {
+        .label {
+            top: -1.5rem;
+        }
+    }
+
+    .label {
+        position: absolute;
+        top: 1.2rem;
+        left: 1rem;
+        font-size: 1.6rem;
+        padding: .5rem;
+        transition: .3s ease-in-out;
+    }
+}
+
+.form-control {
+    width: 100%;
+    font-size: 1.6rem;
+    border: solid thin rgba($color: var(--color-secondary), $alpha: .25);
+    border-radius: .8rem;
+    padding: 1.6rem 2rem;
+    &:focus {
+        outline: unset;
+    }
+}
+
+
+input:-internal-autofill-selected {
+    background-color: transparent!important;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+form {
+    position: relative;
+}
+
+.wpcf7-response-output {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin: 1rem 0 0!important;
+}

@@ -1,0 +1,172 @@
+// col *
+// =======================
+.col {
+    width: 100%;
+}
+
+.mw-440 {
+    max-width: 44rem;
+}
+
+.w-270 {
+    width: 27rem;
+}
+
+@include md {
+    .w-md-auto {
+        width: auto;
+    }
+
+    .mw-md-400 {
+        width: 40rem;
+    }
+
+    .mw-md-40h {
+        width: 40.5rem;
+    }
+
+    .w-md-42h {
+        width: 42.5rem;
+    }
+
+    .w-md-43h {
+        width: 43.5rem;
+    }
+    
+    .mw-md-480 {
+        width: 48rem;
+    }
+
+    .mw-md-490 {
+        width: 49rem;
+    }
+
+    .mw-md-580 {
+        width: 58rem;
+    }
+
+    .mw-md-600 {
+        width: 60rem;
+    }
+}
+
+@include lg {
+    .w-lg-auto {
+        width: auto;
+    }
+
+    .mw-lg-400 {
+        width: 40rem;
+    }
+
+    .mw-lg-40h {
+        width: 40.5rem;
+    }
+
+    .w-lg-42h {
+        width: 42.5rem;
+    }
+
+    .w-lg-43h {
+        width: 43.5rem;
+    }
+    
+    .mw-lg-480 {
+        max-width: 48rem;
+    }
+
+    .mw-lg-490 {
+        max-width: 49rem;
+    }
+
+    .mw-lg-580 {
+        max-width: 58rem;
+    }
+
+    .mw-lg-600 {
+        width: 60rem;
+    }
+}
+
+.logo-contact {
+    width: 22.5rem;
+}
+
+$width-min: 1;
+$width-max: 12;
+
+@for $i from $width-min through $width-max {
+    .col-#{$i} {
+        width: calc(#{$i} / #{$width-max} * 100%);
+    }
+}
+
+@include md {
+    @for $i from $width-min through $width-max {
+        .col-md-#{$i} {
+            width: calc(#{$i} / #{$width-max} * 100%);
+        }
+    }
+}
+
+@include lg {
+    @for $i from $width-min through $width-max {
+        .col-lg-#{$i} {
+            width: calc(#{$i} / #{$width-max} * 100%);
+        }
+    }
+}
+
+.container {
+    width: calc(100%);
+    @include flexbox(flex, flex-start, flex-start, wrap);
+    padding: 0 2.5rem;
+    @include lg {
+        width: calc(100% - 3rem);
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    @include xxl {
+        max-width: 160.5rem;
+    }
+
+    &.w-full {
+        max-width: 100%;
+    }
+
+    &.mw-1600 {
+        max-width: 160rem;
+    }
+
+    &.mw-1568 {
+        max-width: 156.8rem;
+    }
+    
+    &.mw-1500 {
+        max-width: 150rem;
+    }
+
+    &.mw-1300 {
+        max-width: 130rem;
+    }
+
+    &.mw-1200 {
+        max-width: 120rem;
+    }
+
+    &.mw-1100 {
+        max-width: 110rem;
+    }
+
+    &.mw-1000 {
+        max-width: 100rem;
+    }
+
+    &.mw-900 {
+        max-width: 90rem;
+    }
+    &.mw-700 {
+        max-width: 70rem;
+    }
+}

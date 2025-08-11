@@ -1,0 +1,131 @@
+/* text style */
+/* ============================================ */
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-capitalize {
+    text-transform: capitalize;
+}
+
+
+/* color */
+/* ============================================ */
+.text-primary {
+    color: var(--color-primary);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.text-third {
+    color: var(--color-third);
+}
+
+.text-fourth {
+    color: var(--color-fourth);
+}
+
+.text-base {
+    color: var(--color-base);
+}
+
+.text-link {
+    color: var(--color-link);
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.text-light {
+    color: var(--color-light);
+}
+
+@include lg {
+    .text-lg-primary {
+        color: var(--color-primary);
+    }
+    .text-lg-secondary {
+        color: var(--color-secondary);
+    }
+    .text-lg-third {
+        color: var(--color-third);
+    }
+    .text-lg-fourth {
+        color: var(--color-fourth);
+    }
+    .text-lg-base {
+        color: var(--color-base);
+    }
+    .text-lg-link {
+        color: var(--color-link);
+    }
+    .text-lg-danger {
+        color: var(--color-danger);
+    }
+    .text-lg-light {
+        color: var(--color-light);
+    }
+}
+
+/* background-color */
+/* ============================================ */
+.bg-primary {
+    background-color: var(--color-primary);
+}
+.bg-secondary {
+    background-color: var(--color-secondary);
+}
+.bg-third {
+    background-color: var(--color-third);
+}
+.bg-fourth {
+    background-color: var(--color-fourth);
+}
+.bg-base {
+    background-color: var(--color-base);
+}
+.bg-link {
+    background-color: var(--color-link);
+}
+.bg-danger {
+    background-color: var(--color-danger);
+}
+.bg-light {
+    background-color: var(--color-light);
+}
+.bg-transparent {
+    background-color: transparent;
+}
+
+@include lg {
+    .bg-lg-primary {
+        background-color: var(--color-primary);
+    }
+    .bg-lg-secondary {
+        background-color: var(--color-secondary);
+    }
+    .bg-lg-third {
+        background-color: var(--color-third);
+    }
+    .bg-lg-fourth {
+        background-color: var(--color-fourth);
+    }
+    .bg-lg-base {
+        background-color: var(--color-base);
+    }
+    .bg-lg-link {
+        background-color: var(--color-link);
+    }
+    .bg-lg-danger {
+        background-color: var(--color-danger);
+    }
+    .bg-lg-light {
+        background-color: var(--color-light);
+    }
+    .bg-lg-transparent {
+        background-color: transparent;
+    }
+}

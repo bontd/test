@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="./common/css/common.css">
+  <link rel="stylesheet" href="./common/css/style.css">
+</head>
+<body>
+
+    <div class="slider">
+        <div class="slide">
+            <img src="./common/images/top/slide-01.png" alt="">
+            <div class="col slide-content d-flex flex-column align-items-center justify-content-center fs-30">
+                <span class="slide-fade right">TỔ HỢP VĂN HÓA</span>
+                <span class="slide-fade left">NGHỆ THUẬT ĐƯƠNG ĐẠI TRÊN SÔNG</span>
+            </div>
+        </div>
+        <div class="slide">
+            <img src="./common/images/top/slide-02.png" alt="">
+            <div class="col slide-content d-flex flex-column align-items-center justify-content-center fs-30">
+                <span class="slide-fade right">TỔ HỢP VĂN HÓA</span>
+                <span class="slide-fade left">NGHỆ THUẬT ĐƯƠNG ĐẠI TRÊN SÔNG</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery + Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                slidesToShow: 1,
+                dots: true,
+                arrows: true,
+                centerMode: true,
+                centerPadding: "10%",
+                speed: 1000,
+            });
+
+            $('.slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
+                $('.slick-slide').removeClass('active');
+                $(slick.$slides[nextSlide]).find('img').animate({
+                    opacity: 1,
+                    transform: 'scale(1)'
+                }, 500);
+            });
+
+            $('.slider').on('afterChange', function(event, slick, currentSlide) {
+                console.log('Sau khi đổi, đang ở slide:', currentSlide);
+            });
+        });
+    </script>
+</body>
+</html>

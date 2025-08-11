@@ -1,0 +1,198 @@
+$fontSize-min: 0;
+$fontSize-max: 9;
+// font-size
+// ============================================
+@for $i from $fontSize-min through $fontSize-max {
+    .fs-1#{$i} {
+        font-size: #{1+'.'+#{$i}rem};
+    }
+    .fs-2#{$i} {
+        font-size: #{2+'.'+#{$i}rem};
+    }
+    .fs-3#{$i} {
+        font-size: #{3+'.'+#{$i}rem};
+    }
+    .fs-4#{$i} {
+        font-size: #{4+'.'+#{$i}rem};
+    }
+    .fs-5#{$i} {
+        font-size: #{5+'.'+#{$i}rem};
+    }
+    .fs-6#{$i} {
+        font-size: #{6+'.'+#{$i}rem};
+    }
+}
+
+@include lg {
+    @for $i from $fontSize-min through $fontSize-max {
+        .fs-lg-1#{$i} {
+            font-size: #{1+'.'+#{$i}rem};
+        }
+        .fs-lg-2#{$i} {
+            font-size: #{2+'.'+#{$i}rem};
+        }
+        .fs-lg-3#{$i} {
+            font-size: #{3+'.'+#{$i}rem};
+        }
+        .fs-lg-4#{$i} {
+            font-size: #{4+'.'+#{$i}rem};
+        }
+        .fs-lg-5#{$i} {
+            font-size: #{5+'.'+#{$i}rem};
+        }
+        .fs-lg-6#{$i} {
+            font-size: #{6+'.'+#{$i}rem};
+        }
+    }
+}
+
+// line-height
+// ============================================
+
+$lineHeight-min: 0;
+$lineHeight-max: 9;
+@for $i from $lineHeight-min through $lineHeight-max {
+    .lh-1#{$i} {
+        line-height: #{1+'.'+#{$i}};
+    }
+
+    @include lg {
+        .lh-lg-1#{$i} {
+            line-height: #{1+'.'+#{$i}};
+        }
+    }
+}
+
+// text-align
+// ============================================
+.text-justify {
+    text-align: justify;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+@include md {
+    .text-md-center {
+        text-align: center;
+    }
+
+    .text-md-left {
+        text-align: left;
+    }
+
+    .text-md-right {
+        text-align: right;
+    }
+}
+
+@include lg {
+    .text-lg-justify {
+        text-align: justify;
+    }
+
+    .text-lg-center {
+        text-align: center;
+    }
+
+    .text-lg-left {
+        text-align: left;
+    }
+
+    .text-lg-right {
+        text-align: right;
+    }
+}
+
+// text-align
+// ============================================
+.fw-regular {
+    font-weight: 400;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.fw-bold,
+strong,
+b {
+    font-weight: 700;
+}
+
+.fw-black {
+    font-weight: 900;
+}
+
+@include lg {
+    .fw-lg-regular {
+        font-weight: 400;
+    }
+
+    .fw-lg-medium {
+        font-weight: 500;
+    }
+
+    .fw-lg-bold {
+        font-weight: 700;
+    }
+
+    .fw-lg-black {
+        font-weight: 900;
+    }
+}
+
+// letter-spacing
+// ============================================
+.lspacing-0 {
+    letter-spacing: 0;
+}
+
+.lspacing-10 {
+    letter-spacing: 0.1rem;
+}
+
+.lspacing-15 {
+    letter-spacing: 0.15rem;
+}
+
+.lspacing-20 {
+    letter-spacing: 0.2rem;
+}
+
+.lspacing-50 {
+    letter-spacing: 0.5rem;
+}
+
+// white-space
+// ============================================
+.text-nowrap {
+    white-space: nowrap;
+}
+
+.text-normal {
+    white-space: normal;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+// opacity
+// 
+.opacity-50 {
+    opacity: .5;
+}
+
+.opacity-75 {
+    opacity: .75;
+}
