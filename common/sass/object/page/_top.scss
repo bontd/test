@@ -1,5 +1,5 @@
 .banner {
-    height: 100vh;
+    height: calc(1482/1920*100vw);
     background-position: center;
     &-item {
         position: absolute;
@@ -7,7 +7,7 @@
     }
     &-left {
         left: 0;
-        top: 130px;
+        top: 30rem;
     }
     &-right {
         right: 0;

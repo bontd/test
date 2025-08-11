@@ -468,7 +468,7 @@ form {
   }
 }
 .banner {
-  height: 100vh;
+  height: 77.1875vw;
   background-position: center;
 }
 .banner-item {
@@ -477,7 +477,7 @@ form {
 }
 .banner-left {
   left: 0;
-  top: 130px;
+  top: 30rem;
 }
 .banner-right {
   right: 0;

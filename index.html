@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
 
-  <!-- Slick CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="./common/css/common.css">
-  <link rel="stylesheet" href="./common/css/style.css">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+    <link rel="stylesheet" href="./common/css/common.css">
+    <link rel="stylesheet" href="./common/css/style.css">
 </head>
 <body>
     <div id="smooth-wrapper">
@@ -17,12 +19,12 @@
             <section class="section banner" style="background-image: url('./common/images/top/banner.png')">
                 <div class="banner-item banner-left d-flex justify-content-center">
                     <h1 class="d-flex align-items-center text-light gap-1">
-                        <span class="fade fade-right font-begum fs-40 lh-14 text-right">
-                            ĐÔ THỊ SINH THÁI<br/>
-                            TÍCH HỢP<br/>
-                            NGHỆ THUẬT
+                        <span class="d-flex flex-column fs-40 lh-14 text-right">
+                            <span data-aos="fade-right" data-aos-delay="700">ĐÔ THỊ SINH THÁI</span>
+                            <span data-aos="fade-right" data-aos-delay="800">TÍCH HỢP</span>
+                            <span data-aos="fade-right" data-aos-delay="900">NGHỆ THUẬT</span>
                         </span>
-                        <span class="fade fade-left headding-1 fs-60 lh-10 mt-10 pt-5 ml-3">Di sản</span>
+                        <span class="headding-1 fs-60 lh-10 mt-10 pt-5 ml-3" data-aos="fade-left" data-aos-delay="300">Di sản</span>
                     </h1>
                 </div>
                 <div class="banner-item banner-right">
@@ -66,12 +68,9 @@
     <script src="./common/js/ScrollSmoother.min.txt"></script>
     <script src="./common/js/common.js"></script>
 
-    <script>  
-        AOS.init();
-    </script>
-
     <script>
         $(document).ready(function(){
+            AOS.init();
             $('.slider').slick({
                 slidesToShow: 1,
                 dots: true,
