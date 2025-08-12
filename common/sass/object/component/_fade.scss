@@ -157,3 +157,27 @@
         transform: translateY(50%) rotateX(-90deg);
     }
 }
+
+.textWidthAnimate {
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    &.delay-1 {
+        animation: textWidthAnimate 1s ease-in forwards .3s;
+    }
+    &.delay-2 {
+        animation: textWidthAnimate 1s ease-in forwards .9s;
+    }
+    &.delay-3 {
+        animation: textWidthAnimate 1s ease-in forwards 1.5s;
+    }
+}
+
+@keyframes textWidthAnimate {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
