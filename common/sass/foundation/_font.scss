@@ -15,8 +15,15 @@
 
 @font-face {
     font-family: 'SVN-Gotham';
-    src: url('../font/SVN-GOTHAM/SVN-Gotham-Regular.otf');
+    src: url('../font/SVN-GOTHAM/SVN-Gotham-Light.ttf') format('truetype');
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SVN-Gotham';
+    src: url('../font/SVN-GOTHAM/SVN-Gotham-Regular.otf');
+    font-weight: 500;
     font-style: normal;
 }
 
