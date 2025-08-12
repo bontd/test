@@ -17,6 +17,9 @@
         left: 0;
         top: 5rem;
         @include lg {
+            top: 25rem;
+        }
+        @include xl {
             top: 30rem;
         }
     }
@@ -24,6 +27,9 @@
         right: 0;
         bottom: 5rem;
         @include lg {
+            top: 35rem;
+        }
+        @include xl {
             top: 40rem;
         }
     }
