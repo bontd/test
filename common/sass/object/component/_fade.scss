@@ -181,3 +181,28 @@
         width: 100%;
     }
 }
+
+.animate-blur {
+    max-width: 100%;
+    overflow: hidden;
+    filter: blur(100px);
+    animation: blur .3s ease-in forwards .5s;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(100px);
+    }
+    25% {
+        filter: blur(75px);
+    }
+    50% {
+        filter: blur(50px);
+    }
+    50% {
+        filter: blur(25px);
+    }
+    100% {
+        filter: blur(0);
+    }    
+}
