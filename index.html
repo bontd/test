@@ -162,7 +162,6 @@
 
     <script>
         $(document).ready(function(){
-            AOS.init();
             $('.slider').slick({
                 slidesToShow: 1,
                 dots: true,
@@ -171,6 +170,9 @@
                 centerPadding: "10%",
                 speed: 1000
             });
+        });
+        $(window).on("load", function() {
+            AOS.init();
         });
     </script>
 </body>
