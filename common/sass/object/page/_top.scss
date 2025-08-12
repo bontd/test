@@ -250,7 +250,7 @@
                 transform: translateX(50%);
                 transition: .5s ease-in-out .5s;
                 @include lg {
-                    transition: .5s ease-in-out 1.5s;
+                    transition: .5s ease-in-out 1.2s;
                 }
             }
         }
