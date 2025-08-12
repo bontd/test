@@ -4,7 +4,7 @@
     background-position: center;
     background-repeat: no-repeat;
     @include lgm {
-        background-size: 200%;
+        background-size: 150%;
     }
     &-item {
         position: absolute;
@@ -22,7 +22,7 @@
     }
     &-right {
         right: 0;
-        bottom: 0;
+        bottom: 5rem;
         @include lg {
             top: 40rem;
         }
@@ -231,8 +231,11 @@
             left: 0;
             text-align: center;
             background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-            padding: 5rem 0 7rem;
+            padding: 3rem 0;
             z-index: 99;
+            @include lg {
+                padding: 5rem 0 7rem;
+            }
         }
         &-fade {
             opacity: 0;
