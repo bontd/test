@@ -23,12 +23,28 @@
     color: var(--color-third);
 }
 
+.text-thirdhq {
+    color: rgba($color: $color_third, $alpha: .75);
+}
+
 .text-fourth {
     color: var(--color-fourth);
 }
 
+.text-fourthh {
+    color: rgba($color: $color_fourth, $alpha: .5);
+}
+
 .text-base {
     color: var(--color-base);
+}
+
+.text-baseh {
+    color: rgba($color: $color_base, $alpha: .5);
+}
+
+.text-basehq {
+    color: rgba($color: $color_base, $alpha: .75);
 }
 
 .text-link {
@@ -43,6 +59,14 @@
     color: var(--color-light);
 }
 
+.text-lighth {
+    color: rgba($color: $color_light, $alpha: .4);
+}
+
+.text-lighthq {
+    color: rgba($color: $color_light, $alpha: .75);
+}
+
 @include lg {
     .text-lg-primary {
         color: var(--color-primary);
@@ -53,11 +77,20 @@
     .text-lg-third {
         color: var(--color-third);
     }
+    .text-lg-thirdhq {
+        color: rgba($color: $color_third, $alpha: .75);
+    }
     .text-lg-fourth {
         color: var(--color-fourth);
     }
+    .text-lg-fourthh {
+        color: rgba($color: $color_fourth, $alpha: .5);
+    }
     .text-lg-base {
         color: var(--color-base);
+    }
+    .text-lg-baseh {
+        color: rgba($color: $color_base, $alpha: .5);
     }
     .text-lg-link {
         color: var(--color-link);
@@ -87,17 +120,51 @@
 .bg-base {
     background-color: var(--color-base);
 }
+.bg-baseq {
+    background-color: rgba($color: $color_base, $alpha: .05);
+}
+.bg-baseh {
+    background-color: rgba($color: $color_base, $alpha: .5);
+}
+.bg-basehq {
+    background-color: rgba($color: $color_base, $alpha: .75);
+}
 .bg-link {
     background-color: var(--color-link);
+}
+.bg-dangerq {
+    background-color: #FBF2F3;
+}
+.bg-dangerh {
+    background-color: rgba($color: $color_danger, $alpha: .5);
+}
+.bg-dangerhq {
+    background-color: rgba($color: $color_danger, $alpha: .75);
 }
 .bg-danger {
     background-color: var(--color-danger);
 }
+.bg-lightq {
+    background-color: rgba($color: $color_light, $alpha: .25);
+}
+.bg-lighth {
+    background-color: rgba($color: $color_light, $alpha: .25);
+}
 .bg-light {
     background-color: var(--color-light);
 }
+.bg-lighthq {
+    background-color: rgba($color: $color_light, $alpha: .7);
+}
+.bg-lighthqq {
+    background-color: rgba($color: $color_light, $alpha: .9);
+}
 .bg-transparent {
     background-color: transparent;
+}
+
+.bg-green {
+    background-color: $color_green;
 }
 
 @include lg {
@@ -115,6 +182,9 @@
     }
     .bg-lg-base {
         background-color: var(--color-base);
+    }
+    .bg-lg-base-05 {
+        background-color: rgba($color: $color_base, $alpha: .05);
     }
     .bg-lg-link {
         background-color: var(--color-link);

@@ -120,7 +120,7 @@ $width-max: 12;
 .container {
     width: calc(100%);
     @include flexbox(flex, flex-start, flex-start, wrap);
-    padding: 0 2.5rem;
+    padding: 0 1.5rem;
     @include lg {
         width: calc(100% - 3rem);
         margin: 0 auto;

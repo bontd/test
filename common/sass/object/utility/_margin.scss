@@ -133,19 +133,51 @@ $margin-max: 10;
         margin-right: #{$i + 0.75}rem;
     }
 
-    .column-gap-#{$i} {
+    .gap-#{$i} {
+        gap: #{$i}rem;
+    }
+
+    .gap-#{$i}q {
+        gap: #{$i + 0.25}rem;
+    }
+
+    .gap-#{$i}h {
+        gap: #{$i + 0.5}rem;
+    }
+
+    .gap-#{$i}hq {
+        gap: #{$i + 0.75}rem;
+    }
+
+    .gap-row-#{$i} {
+        row-gap: #{$i}rem;
+    }
+
+    .gap-row-#{$i}q {
+        row-gap: #{$i + 0.25}rem;
+    }
+
+    .gap-row-#{$i}h {
+        row-gap: #{$i + 0.5}rem;
+    }
+
+    .gap-row-#{$i}hq {
+        row-gap: #{$i + 0.75}rem;
+    }
+
+    .gap-column-#{$i} {
         column-gap: #{$i}rem;
     }
 
-    .column-gap-#{$i}q {
+    .gap-column-#{$i}q {
         column-gap: #{$i + 0.25}rem;
     }
 
-    .column-gap-#{$i}h {
+    .gap-column-#{$i}h {
         column-gap: #{$i + 0.5}rem;
     }
 
-    .column-gap-#{$i}hq {
+    .gap-column-#{$i}hq {
         column-gap: #{$i + 0.75}rem;
     }
 }
@@ -281,20 +313,36 @@ $margin-max: 10;
             margin-right: #{$i + 0.75}rem;
         }
 
-        .column-gap-md-#{$i} {
-            column-gap: #{$i}rem;
+        .gap-md-#{$i} {
+            gap: #{$i}rem;
         }
     
-        .column-gap-md-#{$i}q {
-            column-gap: #{$i + 0.25}rem;
+        .gap-md-#{$i}q {
+            gap: #{$i + 0.25}rem;
         }
     
-        .column-gap-md-#{$i}h {
-            column-gap: #{$i + 0.5}rem;
+        .gap-md-#{$i}h {
+            gap: #{$i + 0.5}rem;
         }
     
-        .column-gap-md-#{$i}hq {
-            column-gap: #{$i + 0.75}rem;
+        .gap-md-#{$i}hq {
+            gap: #{$i + 0.75}rem;
+        }
+
+        .gap-md-#{$i} {
+            gap: #{$i}rem;
+        }
+    
+        .gap-md-#{$i}q {
+            gap: #{$i + 0.25}rem;
+        }
+    
+        .gap-md-#{$i}h {
+            gap: #{$i + 0.5}rem;
+        }
+    
+        .gap-md-#{$i}hq {
+            gap: #{$i + 0.75}rem;
         }
     }
 }
@@ -430,19 +478,51 @@ $margin-max: 10;
             margin-right: #{$i + 0.75}rem;
         }
 
-        .column-gap-lg-#{$i} {
+        .gap-lg-#{$i} {
+            gap: #{$i}rem;
+        }
+    
+        .gap-lg-#{$i}q {
+            gap: #{$i + 0.25}rem;
+        }
+    
+        .gap-lg-#{$i}h {
+            gap: #{$i + 0.5}rem;
+        }
+    
+        .gap-lg-#{$i}hq {
+            gap: #{$i + 0.75}rem;
+        }
+
+        .gap-row-lg-#{$i} {
+            row-gap: #{$i}rem;
+        }
+    
+        .gap-row-lg-#{$i}q {
+            row-gap: #{$i + 0.25}rem;
+        }
+    
+        .gap-row-lg-#{$i}h {
+            row-gap: #{$i + 0.5}rem;
+        }
+    
+        .gap-row-lg-#{$i}hq {
+            row-gap: #{$i + 0.75}rem;
+        }
+
+        .gap-column-lg-#{$i} {
             column-gap: #{$i}rem;
         }
     
-        .column-gap-lg-#{$i}q {
+        .gap-column-lg-#{$i}q {
             column-gap: #{$i + 0.25}rem;
         }
     
-        .column-gap-lg-#{$i}h {
+        .gap-column-lg-#{$i}h {
             column-gap: #{$i + 0.5}rem;
         }
     
-        .column-gap-lg-#{$i}hq {
+        .gap-column-lg-#{$i}hq {
             column-gap: #{$i + 0.75}rem;
         }
     }
@@ -461,6 +541,10 @@ $margin-max: 10;
 .my-auto {
     margin-top: auto;
     margin-bottom: auto;
+}
+
+.mt-auto {
+    margin-top: auto;
 }
 
 .mr-auto {
@@ -516,68 +600,5 @@ $margin-max: 10;
 
     .ml-lg-auto {
         margin-left: auto;
-    }
-}
-
-// margin 0
-.m-0 {
-    margin: 0;
-}
-
-.mx-0 {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.my-0 {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.mt-0 {
-    margin-top: 0;
-}
-
-.mb-0 {
-    margin-bottom: 0;
-}
-
-.mr-0 {
-    margin-right: 0;
-}
-
-.ml-0 {
-    margin-left: 0;
-}
-
-@include lg {
-    .m-lg-0 {
-        margin: 0;
-    }
-
-    .mx-lg-0 {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .my-lg-0 {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    .mt-lg-0 {
-        margin-top: 0;
-    }
-
-    .mb-lg-0 {
-        margin-bottom: 0;
-    }
-
-    .mr-lg-0 {
-        margin-right: 0;
-    }
-
-    .ml-lg-0 {
-        margin-left: 0;
     }
 }

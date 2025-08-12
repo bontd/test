@@ -1,25 +1,2 @@
 // button
 // ==========================
-.backtotop {
-    width: 4.7rem;
-    height: 4.7rem;
-    display: none;
-    background: var(--color-primary);
-    color: var(--color-light);
-    border: 0;
-    padding: 0;
-    position: fixed;
-    bottom: 28rem;
-    right: 1.5rem;
-    cursor: pointer;
-    z-index: 9;
-    &:hover {
-        opacity: .7;
-    }
-    &.nologin {
-        bottom: 90px;
-        @include lg {
-            bottom: 8rem;
-        }
-    }
-}
